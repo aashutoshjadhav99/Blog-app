@@ -34,10 +34,10 @@ a:hover{
 }
 .nav-right{
     display: grid;
-    gap: 12px;
     grid-auto-flow: column;
     text-align: center;
     align-items: center;
+    gap: 12px;
 
 }
 .hamburger-checkbox{
@@ -48,18 +48,51 @@ a:hover{
     display: none;
     font-size: 28px;
     cursor: pointer;
-     background: none;
-     color: white;
-     padding: 10px;
-     text-align: center;
+    background: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
 
+}
+/* Home section starts */
+.home{
+    padding: 60px 5%;
+    background-color: aliceblue;
+}
+.home-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+.home-text h2{
+    font-size: 36px;
+    margin-bottom: 15px;
+
+}
+.home-text p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+}
+.home-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: burlywood;
+    border-radius: 15%;
+}
+.home-image img{
+    width: 100%;
+    border-radius: 10px;
 }
 @media ( max-width:768px){
     .logo{
-        font-size: large;
+        font-size: larger;
     }
     .nav-left p{
-        font-size:small ;
+        font-size: small ;
 
     }
     .navbar{
@@ -69,22 +102,23 @@ a:hover{
         display: block;
         z-index: 1001;
     }
+
     .nav-right{
         position: absolute;
         grid-template-columns: 1fr;
         grid-auto-flow: row;
-        top: 100%;
-        left: 0%;
+        top:100%;
+        left: 0;
         text-align: left;
         width: 100%;
-        background-color: burlywood;
+        background-color:burlywood;
         padding: 15px 10px;
         display: none;
         
-    }
-    .hamburger-checkbox:checked ~.nav-right {
-        display: grid;
         
     }
-   
+    .hamburger-checkbox:checked ~ .nav-right{
+        display: grid;
+    }
+  
 }
