@@ -24,6 +24,8 @@ a:hover{
     padding: 1.5% 5%;
     display: grid;
     grid-template-columns: 1fr auto;
+    align-items: center;
+    position: relative;
 }
 .nav-left h2{
     margin-bottom: 1%;
@@ -37,4 +39,52 @@ a:hover{
     text-align: center;
     align-items: center;
 
+}
+.hamburger-checkbox{
+   display: none; 
+
+}
+.hamburger-icon{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+     background: none;
+     color: white;
+     padding: 10px;
+     text-align: center;
+
+}
+@media ( max-width:768px){
+    .logo{
+        font-size: large;
+    }
+    .nav-left p{
+        font-size:small ;
+
+    }
+    .navbar{
+        grid-template-columns: 1fr auto;
+    }
+    .hamburger-icon{
+        display: block;
+        z-index: 1001;
+    }
+    .nav-right{
+        position: absolute;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        top: 100%;
+        left: 0%;
+        text-align: left;
+        width: 100%;
+        background-color: burlywood;
+        padding: 15px 10px;
+        display: none;
+        
+    }
+    .hamburger-checkbox:checked ~.nav-right {
+        display: grid;
+        
+    }
+   
 }
