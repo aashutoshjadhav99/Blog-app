@@ -171,6 +171,53 @@ a:hover {
 
 
 /* Gallery section Ends */
+/* footer section starts */
+.footer{
+    background-color: gray;
+    color: blanchedalmond;
+    padding: 40px 5% 20px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer-col h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: skyblue;
+}
+.footer-col p{
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #d1d5db ;
+}
+.footer-col ul{
+    list-style: none;
+    
+}
+.footer-col ul li{
+    margin-bottom: 8px;
+}
+.footer-col ul li a{
+   font-size: 14px;
+   color:c#d1d5db ;
+}
+.footer-col ul li a:hover{
+   font-size: 14px;
+   color:rgb(246, 209, 5);
+}
+.footer-bottom{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13px;
+    padding-top: 15px;
+    color: blanchedalmond;
+    
+    
+}
+
+
+/* foorter  section ends */
 
 
 @media (max-width:768px) {
